@@ -31,6 +31,7 @@
     - awx.awx
 
   vars:
+    controller_token: "{{ custom_token }}"
     # Single template; from CLI -e or env AAP_TEMPLATE_NAME
     template_name: "{{ lookup('env', 'AAP_TEMPLATE_NAME') | default('', true) }}"
     # Or pass multiple: template_names: ["vSphere-Nested-DEVQE-static", "Other-Template"]
