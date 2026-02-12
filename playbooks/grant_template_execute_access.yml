@@ -23,8 +23,6 @@
 
 - name: Grant user execution access to AAP job template(s)
   hosts: localhost
-  environment:
-    AAP_TOKEN: "{{ custom_token }}"
 
   gather_facts: false
   collections:
